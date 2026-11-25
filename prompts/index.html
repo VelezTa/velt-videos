@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prompts de Erika · Velt Studio</title>
+<meta name="description" content="Los prompts que uso para que la IA me resuelva problemas de todos los días. Copia, pega y listo.">
+<meta name="robots" content="noindex">
+<link rel="preload" as="font" type="font/woff2" href="fonts/bricolage-grotesque-latin.woff2" crossorigin>
+<style>
+@font-face{font-family:"Bricolage Grotesque";font-weight:200 800;font-display:swap;src:url(fonts/bricolage-grotesque-latin.woff2) format("woff2")}
+@font-face{font-family:"Instrument Sans";font-weight:400 700;font-display:swap;src:url(fonts/instrument-sans-latin.woff2) format("woff2")}
+:root{--paper:#f6f1e7;--ink:#0a1640;--blue:#2d4bff;--yellow:#ffd23f;--card:#fffdf8;--line:#e4dccb;--soft:#5b6485}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.55 "Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:28px 28px}
+main{max-width:720px;margin:0 auto;padding:28px 16px 64px}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1;margin:0;text-wrap:balance}
+.brand{font:700 13px/1 "Instrument Sans",system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+h1{font-size:clamp(34px,9vw,54px);font-weight:800;margin:14px 0 12px}
+h1 mark{background:var(--yellow);color:inherit;padding:0 .12em;border-radius:6px}
+.lead{font-size:19px;max-width:34em;margin:0 0 22px}
+.steps{list-style:none;margin:0 0 22px;padding:0;display:grid;gap:8px}
+.steps li{background:var(--card);border:1.5px solid var(--ink);border-radius:14px;padding:11px 14px;display:flex;gap:12px;align-items:baseline}
+.steps b{font-family:"Bricolage Grotesque",sans-serif;font-size:20px}
+.note{font-size:15px;color:var(--soft);margin:0 0 20px}
+.index{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 34px}
+.index a{font:700 13px/1 "Instrument Sans",sans-serif;letter-spacing:.06em;color:var(--ink);text-decoration:none;background:var(--card);border:1.5px solid var(--ink);border-radius:999px;padding:9px 13px}
+.index a:hover,.index a:focus-visible{background:var(--yellow)}
+h2{font-size:26px;font-weight:800;margin:38px 0 14px}
+.card{background:var(--card);border:1.5px solid var(--ink);border-radius:20px;padding:20px 18px 18px;margin:0 0 18px;box-shadow:5px 5px 0 var(--ink);scroll-margin-top:16px}
+.card:target{box-shadow:5px 5px 0 var(--blue);border-color:var(--blue)}
+.word{display:inline-block;margin:0 0 10px;background:var(--yellow);border:1.5px solid var(--ink);border-radius:8px;padding:5px 9px;font:800 13px/1 "Instrument Sans",sans-serif;letter-spacing:.1em;transform:rotate(-1.5deg)}
+h3{font-size:25px;font-weight:800;margin-bottom:8px}
+.what{margin:0 0 8px}
+.result{margin:0 0 14px;font-size:15.5px;color:var(--soft)}
+.result b{color:var(--ink)}
+pre{margin:0 0 12px;background:#101a3f;color:#f3f1ea;border-radius:14px;padding:16px;font:14.5px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;max-height:300px;overflow:auto}
+.copy{width:100%;border:1.5px solid var(--ink);background:var(--blue);color:#fff;font:700 17px/1 "Instrument Sans",sans-serif;border-radius:14px;padding:16px;cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.copy:active{transform:translateY(1px)}
+.copy.done{background:#12805c}
+.copy:focus-visible,.index a:focus-visible,a:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.cta{background:var(--ink);color:#fff;border-radius:22px;padding:26px 20px;margin-top:40px}
+.cta h2{margin:0 0 8px;color:#fff}
+.cta p{margin:0 0 16px;color:#d6dbf5}
+.cta a{display:inline-block;background:var(--yellow);color:var(--ink);font-weight:700;text-decoration:none;border-radius:12px;padding:13px 18px;margin:0 8px 8px 0}
+.cta a.ghost{background:transparent;color:#fff;border:1.5px solid #fff}
+footer{margin-top:22px;font-size:14px;color:var(--soft)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<main>
+  <p class="brand">Velt Studio · Erika</p>
+  <h1>Los prompts que uso para que la <mark>IA</mark> lo resuelva por mí</h1>
+  <p class="lead">Cada uno lo probé primero con mis propias cosas: mi computador, mi página web, mi televisor. Si funcionó, está aquí.</p>
+  <ol class="steps">
+    <li><b>1</b><span>Toca <strong>Copiar prompt</strong>.</span></li>
+    <li><b>2</b><span>Pégalo en tu IA: ChatGPT, Claude o Gemini.</span></li>
+    <li><b>3</b><span>Cambia lo que está entre [corchetes] por tus datos.</span></li>
+  </ol>
+  <p class="note">Si tu IA puede manejar tu computador, lo hace sola. Si usas el chat normal, te guía paso a paso. Ninguno borra ni cambia nada sin tu permiso.</p>
+  <nav class="index" aria-label="Prompts"><a href="#espacio">ESPACIO</a><a href="#wifi">WIFI</a><a href="#compu">COMPU</a><a href="#tele">TELE</a><a href="#gastos">GASTOS</a><a href="#lenta">LENTA</a><a href="#botones">BOTONES</a><a href="#perfil">PERFIL</a><a href="#respuestas">RESPUESTAS</a></nav>
+
+  <h2>Para tu casa</h2>
+    <article class="card" id="espacio">
+      <p class="word">ESPACIO</p>
+      <h3>Mi computador está lleno</h3>
+      <p class="what">Te muestra qué ocupa más y libera espacio sin tocar tus fotos ni tus documentos.</p>
+      <p class="result"><b>Mi prueba:</b> A mi computador le quedaban 0,2 GB libres. Quedó con 14 GB.</p>
+      <pre id="p-espacio">Mi computador se quedó sin espacio. Ayúdame a liberar lo máximo posible sin perder nada importante.
+
+Si puedes ejecutar comandos en este computador, hazlo tú. Si no puedes, guíame paso a paso: una instrucción a la vez, dime exactamente dónde tocar y espera a que te pegue el resultado o una captura.
+
+Reglas:
+- Primero solo mide. Muéstrame una lista de lo que más ocupa, con su tamaño, de mayor a menor.
+- Sepáralo en tres grupos: (1) seguro de borrar porque se vuelve a crear solo (cachés, temporales, instaladores, papelera); (2) probablemente no lo necesito, pero decido yo; (3) no tocar.
+- Nunca toques mis fotos, documentos, escritorio ni descargas sin preguntarme archivo por archivo.
+- No borres nada sin mostrarme qué es, cuánto libera y si se puede recuperar, y sin esperar mi &quot;sí&quot;.
+- Explícame cada cosa en una frase, sin tecnicismos.
+
+Mi equipo es: [Mac / Windows] y me quedan [X] GB libres.
+Al final dime cuánto espacio tenía antes y cuánto tengo ahora.</pre>
+      <button class="copy" data-target="p-espacio">Copiar prompt</button>
+    </article>
+    <article class="card" id="wifi">
+      <p class="word">WIFI</p>
+      <h3>Mi internet está lento</h3>
+      <p class="what">Mide tu wifi y te dice si el problema es el operador o está en tu casa.</p>
+      <p class="result"><b>Mi prueba:</b> La velocidad sí llegaba (más de 100 megas). El problema era la señal dentro de mi casa.</p>
+      <pre id="p-wifi">Mi internet está lento o inestable. Actúa como técnico de redes y encuentra la causa real.
+
+Si puedes ejecutar comandos en este computador, hazlo tú. Si no puedes, guíame paso a paso: una instrucción a la vez, dime exactamente dónde tocar y espera a que te pegue el resultado o una captura.
+
+Mide en este orden, una prueba a la vez:
+1. Mi conexión wifi: banda (2,4 o 5 GHz), canal, fuerza de la señal y cuántas redes vecinas usan mi mismo canal.
+2. La respuesta de mi router y la de internet (ping al router y a 1.1.1.1), para saber si el problema está dentro de mi casa o es del operador.
+3. Qué tan rápido responde mi DNS comparado con 1.1.1.1 y 8.8.8.8.
+4. Velocidad real de bajada y de subida, y la respuesta mientras la red está ocupada.
+
+Después dame:
+- Un resumen con los números exactos, explicado sin tecnicismos.
+- Las 3 causas reales, de la que más afecta a la que menos. Nada de trucos que no sirven.
+- Qué puedo arreglar ya, gratis, y qué hay que cambiar en el router. Pídeme la marca y el modelo del router para darme los pasos exactos.
+- Si el problema es del operador, dime qué decirle cuando llame.
+
+No cambies nada sin mostrarme primero qué vas a hacer y esperar mi &quot;sí&quot;.
+Cuando yo aplique los cambios, repite las mismas pruebas y muéstrame una tabla de antes y después.</pre>
+      <button class="copy" data-target="p-wifi">Copiar prompt</button>
+    </article>
+    <article class="card" id="compu">
+      <p class="word">COMPU</p>
+      <h3>Mi computador está lento</h3>
+      <p class="what">Revisa memoria, disco y lo que se abre solo al encender.</p>
+      <p class="result"><b>Mi prueba:</b> El mío no estaba viejo: tenía 914 cosas corriendo y un juego que se abría solo.</p>
+      <pre id="p-compu">Mi computador está lento. Encuentra por qué.
+
+Si puedes ejecutar comandos en este computador, hazlo tú. Si no puedes, guíame paso a paso: una instrucción a la vez, dime exactamente dónde tocar y espera a que te pegue el resultado o una captura.
+
+Revisa en este orden:
+1. Cuánta memoria y cuánto disco me quedan libres.
+2. Qué programas están gastando más en este momento.
+3. Qué programas se abren solos al encender.
+4. Si hay actualizaciones del sistema pendientes.
+
+Después dame las 3 causas reales, de mayor a menor, y qué hacer con cada una.
+No cierres, desinstales ni cambies nada sin explicarme qué es y esperar mi &quot;sí&quot;.
+Mi equipo es: [Mac / Windows, año aproximado].</pre>
+      <button class="copy" data-target="p-compu">Copiar prompt</button>
+    </article>
+    <article class="card" id="tele">
+      <p class="word">TELE</p>
+      <h3>Mi televisor rastrea lo que veo</h3>
+      <p class="what">Te dice dónde se apaga el rastreo de lo que ves, según la marca de tu televisor.</p>
+      <p class="result"><b>Mi prueba:</b> En mi Samsung venía aceptado. Estaba en Términos y privacidad.</p>
+      <pre id="p-tele">Mi televisor es un [marca] [modelo o año aproximado].
+
+Quiero apagar todo lo que rastrea lo que veo: el reconocimiento automático de contenido (ACR), la publicidad personalizada y el envío de datos de uso.
+
+- Busca en la página de soporte oficial de la marca la ruta actual para mi modelo. Los menús cambian con cada actualización.
+- Dame los pasos uno por uno, con el nombre exacto de cada opción como aparece en pantalla.
+- Dime qué dejo de recibir si lo apago (por ejemplo, recomendaciones) y cómo volver a encenderlo.
+- Si no encuentras la ruta exacta para mi modelo, dímelo y pídeme una foto del menú de Ajustes.
+
+No me recomiendes instalar nada ni hacer cambios que no se puedan deshacer.</pre>
+      <button class="copy" data-target="p-tele">Copiar prompt</button>
+    </article>
+    <article class="card" id="gastos">
+      <p class="word">GASTOS</p>
+      <h3>Suscripciones que pago sin darme cuenta</h3>
+      <p class="what">Busca en tu correo los cobros automáticos y te arma la lista con cómo cancelar cada uno.</p>
+      <p class="result"><b>Mi prueba:</b> Me encontró 3 servicios de pago del último año. Solo lee: no borra ni cancela nada.</p>
+      <pre id="p-gastos">Quiero encontrar todas las suscripciones y cobros automáticos que estoy pagando.
+
+Si tienes acceso a mi correo, búscalo tú. Solo lee: no borres, no respondas, no canceles ni marques nada.
+Si no tienes acceso, pídeme que pegue esto en el buscador de mi correo y que te copie la lista de resultados:
+newer_than:1y subject:(recibo OR receipt OR invoice OR factura OR suscripción OR subscription OR renewal OR renovación OR payment OR pago OR cobro OR trial)
+
+Busca solo en el asunto de los correos del último año. Ignora publicidad y pagos de una sola vez (viajes, compras).
+
+Entrégame una tabla con:
+- Servicio
+- Cuánto cobra y en qué moneda
+- Cada cuánto (mensual o anual)
+- Fecha del último cobro
+- Si sigue activa o ya está cancelada
+- Cómo se cancela (el enlace o los pasos)
+
+Después:
+- Suma el total al mes y al año de las que siguen activas.
+- Marca las repetidas, las pruebas gratis que ya empezaron a cobrar y las que cancelé y volví a comprar.
+- Recuérdame revisar también las suscripciones del celular, que no siempre llegan al correo: en iPhone, Ajustes &gt; mi nombre &gt; Suscripciones; en Android, Play Store &gt; mi foto &gt; Pagos y suscripciones.
+- Pregúntame de cada una si la uso, y ármame la lista final de las que voy a cancelar.
+
+No inventes cobros: si no estás seguro de un valor, dilo.</pre>
+      <button class="copy" data-target="p-gastos">Copiar prompt</button>
+    </article>
+
+  <h2>Para tu negocio</h2>
+    <article class="card" id="lenta">
+      <p class="word">LENTA</p>
+      <h3>Mi página web carga lento</h3>
+      <p class="what">Mide tu página en un celular y te dice las 3 cosas que más la frenan.</p>
+      <p class="result"><b>Mi prueba:</b> La mía tardaba 4,5 segundos. Lo recomendado es menos de 2,5.</p>
+      <pre id="p-lenta">Revisa qué tan rápido carga esta página en un celular: [tu página web]
+
+Si puedes abrir páginas o correr pruebas, mídela tú. Si no, dime cómo hacerlo en pagespeed.web.dev y yo te pego el resultado o una captura.
+
+Entrégame:
+- La nota de velocidad en celular y cuántos segundos tarda en verse lo principal.
+- Las 3 cosas que más la frenan, de la más grave a la menos grave, explicadas sin tecnicismos.
+- Para cada una: si la puedo arreglar yo (y cómo) o qué decirle exactamente a quien me hizo la página.
+
+No me des una lista de 20 problemas: solo los 3 que más cambian el resultado.</pre>
+      <button class="copy" data-target="p-lenta">Copiar prompt</button>
+    </article>
+    <article class="card" id="botones">
+      <p class="word">BOTONES</p>
+      <h3>¿Funcionan los botones de mi página?</h3>
+      <p class="what">Abre todos los botones y enlaces de tu web y te avisa cuáles están rotos.</p>
+      <p class="result"><b>Mi prueba:</b> Revisó 31 botones y enlaces de mi web. Cero rotos.</p>
+      <pre id="p-botones">Revisa esta página web como lo haría un cliente desde el celular: [tu página web]
+
+Si puedes abrir páginas, revísala tú. Si no puedes, dime qué revisar paso a paso y yo te cuento qué veo.
+
+1. Abre cada botón y cada enlace, también los de WhatsApp, redes sociales y el menú. Dime cuáles no abren, abren otra cosa o llevan a una página de error.
+2. Dime cómo aparece en Google: el título y la descripción. Avísame si se cortan (más de 60 y 160 caracteres) o si no dicen qué vendo y dónde.
+3. Dime si al compartir el enlace por WhatsApp sale una imagen y un texto, o sale vacío.
+4. Dime si hay fotos sin descripción.
+
+Entrégame una lista corta: qué está roto, dónde está y cómo se arregla. Primero lo que me hace perder clientes.
+Si todo está bien, dímelo en una línea. No inventes problemas.</pre>
+      <button class="copy" data-target="p-botones">Copiar prompt</button>
+    </article>
+    <article class="card" id="perfil">
+      <p class="word">PERFIL</p>
+      <h3>Mi Instagram no me trae clientes</h3>
+      <p class="what">Mira tu perfil como un cliente con 5 segundos y te reescribe la biografía.</p>
+      <p class="result"><b>Mi prueba:</b> Me dijo que se entendía qué vendo, pero no quién soy.</p>
+      <pre id="p-perfil">Te adjunto una captura del perfil de Instagram de mi negocio.
+
+Míralo como un cliente que llega por primera vez y tiene 5 segundos.
+- Dime qué entiende en esos 5 segundos: qué vendo, dónde y cómo comprar. Si algo no se entiende, dilo sin suavizar.
+- Dime las 3 cosas que le faltan para que alguien me escriba o me compre.
+- Reescribe mi biografía en máximo 150 caracteres: qué vendo, para quién, dónde y qué hacer ahora.
+- Dime qué 3 historias destacadas debería tener.
+
+Mi negocio vende [qué] en [ciudad] y mis clientes son [quiénes].
+No inventes datos de mi negocio: si te falta algo, pregúntame.</pre>
+      <button class="copy" data-target="p-perfil">Copiar prompt</button>
+    </article>
+    <article class="card" id="respuestas">
+      <p class="word">RESPUESTAS</p>
+      <h3>Respondo lo mismo 20 veces al día</h3>
+      <p class="what">Convierte tus preguntas frecuentes en respuestas rápidas para WhatsApp Business.</p>
+      <p class="result"><b>Mi prueba:</b> Me dejó 4 respuestas listas, cada una con su atajo.</p>
+      <pre id="p-respuestas">Estas son las preguntas que más me hacen mis clientes por WhatsApp:
+[pega aquí entre 5 y 10 preguntas]
+
+Estos son los datos reales de mi negocio: [precios, horario, dirección o zona de entrega, formas de pago].
+
+Escríbeme una respuesta rápida para cada pregunta, lista para guardar en WhatsApp Business:
+- Máximo 3 líneas, en tono cercano y sin sonar a robot.
+- Cada una termina con una pregunta que acerque la venta.
+- Ponle a cada una un atajo corto (por ejemplo /precio, /horario).
+- Usa solo los datos que te di. Si falta alguno, pregúntame.
+
+Después dime paso a paso dónde se guardan las respuestas rápidas en WhatsApp Business.</pre>
+      <button class="copy" data-target="p-respuestas">Copiar prompt</button>
+    </article>
+
+  <section class="cta">
+    <h2>¿Prefieres que lo hagamos por ti?</h2>
+    <p>En Velt Studio hacemos páginas web que venden, para negocios en Latinoamérica y Estados Unidos.</p>
+    <a href="https://veltstudio.tech/">Ver veltstudio.tech</a>
+    <a class="ghost" href="https://www.instagram.com/veltstudio.tech/">Sígueme en Instagram</a>
+  </section>
+  <footer>Voy subiendo prompts nuevos. Los resultados de "Mi prueba" son los míos: los tuyos pueden ser distintos.</footer>
+</main>
+<script>
+document.querySelectorAll('.copy').forEach(function (b) {
+  b.addEventListener('click', function () {
+    var text = document.getElementById(b.dataset.target).textContent;
+    var ok = function () { b.textContent = '¡Copiado! Pégalo en tu IA'; b.classList.add('done'); setTimeout(function () { b.textContent = 'Copiar prompt'; b.classList.remove('done'); }, 2600); };
+    var fallback = function () {
+      var t = document.createElement('textarea'); t.value = text; t.setAttribute('readonly', ''); t.style.position = 'fixed'; t.style.opacity = '0';
+      document.body.appendChild(t); t.select(); t.setSelectionRange(0, text.length);
+      try { document.execCommand('copy'); ok(); } catch (e) { b.textContent = 'Mantén presionado el texto para copiar'; }
+      document.body.removeChild(t);
+    };
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(text).then(ok, fallback); else fallback();
+  });
+});
+</script>
+</body>
+</html>
