@@ -33,6 +33,7 @@ h2{font-size:26px;font-weight:800;margin:38px 0 14px}
 .card:target{box-shadow:5px 5px 0 var(--blue);border-color:var(--blue)}
 .word{display:inline-block;margin:0 0 10px;background:var(--yellow);border:1.5px solid var(--ink);border-radius:8px;padding:5px 9px;font:800 13px/1 "Instrument Sans",sans-serif;letter-spacing:.1em;transform:rotate(-1.5deg)}
 h3{font-size:25px;font-weight:800;margin-bottom:8px}
+.mode{margin:0 0 8px;font-size:14.5px;font-weight:700;color:var(--blue)}
 .what{margin:0 0 8px}
 .result{margin:0 0 14px;font-size:15.5px;color:var(--soft)}
 .result b{color:var(--ink)}
@@ -60,13 +61,14 @@ footer{margin-top:22px;font-size:14px;color:var(--soft)}
     <li><b>2</b><span>Pégalo en tu IA: ChatGPT, Claude o Gemini.</span></li>
     <li><b>3</b><span>Cambia lo que está entre [corchetes] por tus datos.</span></li>
   </ol>
-  <p class="note">Si tu IA puede manejar tu computador, lo hace sola. Si usas el chat normal, te guía paso a paso. Ninguno borra ni cambia nada sin tu permiso.</p>
+  <p class="note">En el computador, con la app de escritorio de ChatGPT o Claude, la IA hace el trabajo sola. En el chat del celular te guía paso a paso: ninguna IA puede manejar tu celular por ti. Y ninguno de estos prompts borra ni cambia nada sin tu permiso.</p>
   <nav class="index" aria-label="Prompts"><a href="#espacio">ESPACIO</a><a href="#wifi">WIFI</a><a href="#compu">COMPU</a><a href="#tele">TELE</a><a href="#gastos">GASTOS</a><a href="#lenta">LENTA</a><a href="#botones">BOTONES</a><a href="#perfil">PERFIL</a><a href="#respuestas">RESPUESTAS</a></nav>
 
   <h2>Para tu casa</h2>
     <article class="card" id="espacio">
       <p class="word">ESPACIO</p>
       <h3>Mi computador está lleno</h3>
+      <p class="mode">🖥️ En el computador, la IA lo hace sola</p>
       <p class="what">Te muestra qué ocupa más y libera espacio sin tocar tus fotos ni tus documentos.</p>
       <p class="result"><b>Mi prueba:</b> A mi computador le quedaban 0,2 GB libres. Quedó con 14 GB.</p>
       <pre id="p-espacio">Mi computador se quedó sin espacio. Ayúdame a liberar lo máximo posible sin perder nada importante.
@@ -87,6 +89,7 @@ Al final dime cuánto espacio tenía antes y cuánto tengo ahora.</pre>
     <article class="card" id="wifi">
       <p class="word">WIFI</p>
       <h3>Mi internet está lento</h3>
+      <p class="mode">🖥️ En el computador, la IA lo hace sola</p>
       <p class="what">Mide tu wifi y te dice si el problema es el operador o está en tu casa.</p>
       <p class="result"><b>Mi prueba:</b> La velocidad sí llegaba (más de 100 megas). El problema era la señal dentro de mi casa.</p>
       <pre id="p-wifi">Mi internet está lento o inestable. Actúa como técnico de redes y encuentra la causa real.
@@ -112,6 +115,7 @@ Cuando yo aplique los cambios, repite las mismas pruebas y muéstrame una tabla 
     <article class="card" id="compu">
       <p class="word">COMPU</p>
       <h3>Mi computador está lento</h3>
+      <p class="mode">🖥️ En el computador, la IA lo hace sola</p>
       <p class="what">Revisa memoria, disco y lo que se abre solo al encender.</p>
       <p class="result"><b>Mi prueba:</b> El mío no estaba viejo: tenía 914 cosas corriendo y un juego que se abría solo.</p>
       <pre id="p-compu">Mi computador está lento. Encuentra por qué.
@@ -132,6 +136,7 @@ Mi equipo es: [Mac / Windows, año aproximado].</pre>
     <article class="card" id="tele">
       <p class="word">TELE</p>
       <h3>Mi televisor rastrea lo que veo</h3>
+      <p class="mode">👆 La IA te guía y tú tocas</p>
       <p class="what">Te dice dónde se apaga el rastreo de lo que ves, según la marca de tu televisor.</p>
       <p class="result"><b>Mi prueba:</b> En mi Samsung venía aceptado. Estaba en Términos y privacidad.</p>
       <pre id="p-tele">Mi televisor es un [marca] [modelo o año aproximado].
@@ -149,6 +154,7 @@ No me recomiendes instalar nada ni hacer cambios que no se puedan deshacer.</pre
     <article class="card" id="gastos">
       <p class="word">GASTOS</p>
       <h3>Suscripciones que pago sin darme cuenta</h3>
+      <p class="mode">💬 Funciona en el chat, también en el celular</p>
       <p class="what">Busca en tu correo los cobros automáticos y te arma la lista con cómo cancelar cada uno.</p>
       <p class="result"><b>Mi prueba:</b> Me encontró 3 servicios de pago del último año. Solo lee: no borra ni cancela nada.</p>
       <pre id="p-gastos">Quiero encontrar todas las suscripciones y cobros automáticos que estoy pagando.
@@ -181,6 +187,7 @@ No inventes cobros: si no estás seguro de un valor, dilo.</pre>
     <article class="card" id="lenta">
       <p class="word">LENTA</p>
       <h3>Mi página web carga lento</h3>
+      <p class="mode">🖥️ En el computador, la IA lo hace sola</p>
       <p class="what">Mide tu página en un celular y te dice las 3 cosas que más la frenan.</p>
       <p class="result"><b>Mi prueba:</b> La mía tardaba 4,5 segundos. Arreglé lo que me dijo y bajó a 1,2.</p>
       <pre id="p-lenta">Revisa qué tan rápido carga esta página en un celular: [tu página web]
@@ -198,6 +205,7 @@ No me des una lista de 20 problemas: solo los 3 que más cambian el resultado.</
     <article class="card" id="botones">
       <p class="word">BOTONES</p>
       <h3>¿Funcionan los botones de mi página?</h3>
+      <p class="mode">🖥️ En el computador, la IA lo hace sola</p>
       <p class="what">Abre todos los botones y enlaces de tu web y te avisa cuáles están rotos.</p>
       <p class="result"><b>Mi prueba:</b> Revisó 31 botones y enlaces de mi web. Cero rotos.</p>
       <pre id="p-botones">Revisa esta página web como lo haría un cliente desde el celular: [tu página web]
@@ -216,6 +224,7 @@ Si todo está bien, dímelo en una línea. No inventes problemas.</pre>
     <article class="card" id="perfil">
       <p class="word">PERFIL</p>
       <h3>Mi Instagram no me trae clientes</h3>
+      <p class="mode">💬 Funciona en el chat, también en el celular</p>
       <p class="what">Mira tu perfil como un cliente con 5 segundos y te reescribe la biografía.</p>
       <p class="result"><b>Mi prueba:</b> Me dijo que se entendía qué vendo, pero no quién soy. Ya cambié mi biografía.</p>
       <pre id="p-perfil">Te adjunto una captura del perfil de Instagram de mi negocio.
@@ -233,6 +242,7 @@ No inventes datos de mi negocio: si te falta algo, pregúntame.</pre>
     <article class="card" id="respuestas">
       <p class="word">RESPUESTAS</p>
       <h3>Respondo lo mismo 20 veces al día</h3>
+      <p class="mode">💬 Funciona en el chat, también en el celular</p>
       <p class="what">Convierte tus preguntas frecuentes en respuestas listas para Instagram o WhatsApp Business.</p>
       <p class="result"><b>Mi prueba:</b> Me dejó 4 respuestas listas. En mi Instagram ya se responden solas.</p>
       <pre id="p-respuestas">Estas son las preguntas que más me hacen mis clientes:
