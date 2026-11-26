@@ -62,7 +62,7 @@ footer{margin-top:22px;font-size:14px;color:var(--soft)}
     <li><b>3</b><span>Cambia lo que está entre [corchetes] por tus datos.</span></li>
   </ol>
   <p class="note">En el computador, con la app de escritorio de ChatGPT o Claude, la IA hace el trabajo sola. En el chat del celular te guía paso a paso: ninguna IA puede manejar tu celular por ti. Y ninguno de estos prompts borra ni cambia nada sin tu permiso.</p>
-  <nav class="index" aria-label="Prompts"><a href="#espacio">ESPACIO</a><a href="#wifi">WIFI</a><a href="#compu">COMPU</a><a href="#tele">TELE</a><a href="#gastos">GASTOS</a><a href="#lenta">LENTA</a><a href="#botones">BOTONES</a><a href="#perfil">PERFIL</a><a href="#respuestas">RESPUESTAS</a></nav>
+  <nav class="index" aria-label="Prompts"><a href="#espacio">ESPACIO</a><a href="#wifi">WIFI</a><a href="#celular">CELULAR</a><a href="#compu">COMPU</a><a href="#tele">TELE</a><a href="#gastos">GASTOS</a><a href="#lenta">LENTA</a><a href="#botones">BOTONES</a><a href="#perfil">PERFIL</a><a href="#respuestas">RESPUESTAS</a></nav>
 
   <h2>Para tu casa</h2>
     <article class="card" id="espacio">
@@ -111,6 +111,26 @@ Después dame:
 No cambies nada sin mostrarme primero qué vas a hacer y esperar mi &quot;sí&quot;.
 Cuando yo aplique los cambios, repite las mismas pruebas y muéstrame una tabla de antes y después.</pre>
       <button class="copy" data-target="p-wifi">Copiar prompt</button>
+    </article>
+    <article class="card" id="celular">
+      <p class="word">CELULAR</p>
+      <h3>Mi celular está lleno</h3>
+      <p class="mode">👆 La IA te guía y tú tocas</p>
+      <p class="what">Te guía, captura por captura, para liberar espacio sin tocar tus fotos.</p>
+      <p class="result"><b>Mi prueba:</b> En 11 minutos liberé más de medio giga en mi iPhone, y solo hice el primer paso.</p>
+      <pre id="p-celular">Mi celular está lleno. Es un [iPhone / Android, marca] y me quedan [X] GB libres.
+
+Guíame para liberar espacio sin perder fotos ni conversaciones importantes.
+- Una instrucción a la vez: dime exactamente dónde tocar y espera a que te mande la captura.
+- Empieza pidiéndome la captura de la pantalla de Almacenamiento.
+- Revisa primero lo que más suele ocupar: WhatsApp (videos y archivos de los grupos), fotos y videos repetidos, apps que no uso y descargas.
+- Los menús cambian según la versión y el idioma. Si lo que me dices no aparece en mi pantalla, pídeme una captura en vez de suponer.
+- Antes de que borre algo, dime si se puede recuperar.
+- No me pidas instalar apps de limpieza.
+- No pares en el primer paso: cuando termine uno, dime cuánto llevo liberado y sigue con el siguiente.
+
+Al final dime cuánto liberé en total.</pre>
+      <button class="copy" data-target="p-celular">Copiar prompt</button>
     </article>
     <article class="card" id="compu">
       <p class="word">COMPU</p>
