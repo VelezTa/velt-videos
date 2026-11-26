@@ -62,7 +62,178 @@ footer{margin-top:22px;font-size:14px;color:var(--soft)}
     <li><b>3</b><span>Cambia lo que está entre [corchetes] por tus datos.</span></li>
   </ol>
   <p class="note">En el computador, con la app de escritorio de ChatGPT o Claude, la IA hace el trabajo sola. En el chat del celular te guía paso a paso: ninguna IA puede manejar tu celular por ti. Y ninguno de estos prompts borra ni cambia nada sin tu permiso.</p>
-  <nav class="index" aria-label="Prompts"><a href="#espacio">ESPACIO</a><a href="#wifi">WIFI</a><a href="#celular">CELULAR</a><a href="#compu">COMPU</a><a href="#tele">TELE</a><a href="#gastos">GASTOS</a><a href="#lenta">LENTA</a><a href="#botones">BOTONES</a><a href="#perfil">PERFIL</a><a href="#respuestas">RESPUESTAS</a></nav>
+  <nav class="index" aria-label="Prompts"><a href="#legible">LEGIBLE</a><a href="#competencia">COMPETENCIA</a><a href="#fotos">FOTOS</a><a href="#resenas">RESEÑAS</a><a href="#numeros">NUMEROS</a><a href="#dedo">DEDO</a><a href="#google">GOOGLE</a><a href="#invisible">INVISIBLE</a><a href="#duplicados">DUPLICADOS</a><a href="#espacio">ESPACIO</a><a href="#wifi">WIFI</a><a href="#celular">CELULAR</a><a href="#compu">COMPU</a><a href="#tele">TELE</a><a href="#gastos">GASTOS</a><a href="#lenta">LENTA</a><a href="#botones">BOTONES</a><a href="#perfil">PERFIL</a><a href="#respuestas">RESPUESTAS</a></nav>
+
+  <h2>La IA lo hace todo: tu página web y tu negocio</h2>
+    <article class="card" id="legible">
+      <p class="word">LEGIBLE</p>
+      <h3>El botón de mi web casi no se lee</h3>
+      <p class="mode">🖥️ En el computador, la IA lo hace sola</p>
+      <p class="what">Mide el contraste de cada texto de tu página y te dice qué color lo arregla.</p>
+      <p class="result"><b>Mi prueba:</b> El botón de WhatsApp de mi web tenía 2,4 de contraste. Lo mínimo es 4,5.</p>
+      <pre id="p-legible">Revisa esta página web en un celular y encuentra todos los textos que cuestan leer: [tu página web]
+
+Hazlo tú, no me des pasos.
+- Mide el contraste entre cada texto y su fondo. Lo mínimo es 4,5 para texto normal y 3 para texto grande.
+- Dime también qué textos tienen la letra muy pequeña (menos de 12 px).
+- Ordena los problemas del más grave al menos grave. Primero los botones para comprar, escribir o llamar.
+- Para cada uno, dime qué color exacto o qué tamaño lo arregla, cambiando lo menos posible el color de mi marca.
+
+Si tienes el código de la página, prepara el cambio y muéstramelo. No lo publiques sin mi sí.</pre>
+      <button class="copy" data-target="p-legible">Copiar prompt</button>
+    </article>
+    <article class="card" id="competencia">
+      <p class="word">COMPETENCIA</p>
+      <h3>Mi web contra la de mi competencia</h3>
+      <p class="mode">🖥️ En el computador, la IA lo hace sola</p>
+      <p class="what">Mide tu página y las de tu competencia con la misma prueba y te dice en qué ganas y en qué pierdes.</p>
+      <p class="result"><b>Mi prueba:</b> La mía cargó en 2,5 segundos. Las de 3 agencias, entre 4 y 13.</p>
+      <pre id="p-competencia">Compara mi página web con las de mi competencia: mide las cuatro tú, en un celular, con la misma prueba.
+
+Mi página: [tu página web]
+Mi competencia: [página 1], [página 2], [página 3]
+
+Hazlo tú, no me des pasos. De cada una dime:
+- Cuántos segundos tarda en verse lo principal y cuánto pesa.
+- Cómo aparece en Google: el título y la descripción, y si se cortan.
+- Qué ofrece arriba, sin bajar: qué vende, a quién y qué botón tiene.
+- Si tiene botón de WhatsApp o de contacto a la vista.
+
+Entrégame una tabla comparando las cuatro y una lista corta: en qué gano, en qué pierdo y las 3 cosas que debería copiar o mejorar.
+No inventes datos: si no pudiste medir algo, dilo.</pre>
+      <button class="copy" data-target="p-competencia">Copiar prompt</button>
+    </article>
+    <article class="card" id="fotos">
+      <p class="word">FOTOS</p>
+      <h3>Las fotos de mi web pesan demasiado</h3>
+      <p class="mode">🖥️ En el computador, la IA lo hace sola</p>
+      <p class="what">Aligera todas las fotos de tu página en una copia y te muestra el antes y el después.</p>
+      <p class="result"><b>Mi prueba:</b> 10 fotos de mi web pasaron de 1,6 MB a 0,4 MB, y se ven igual.</p>
+      <pre id="p-fotos">Aligera todas las fotos de mi página web sin que se note la diferencia.
+
+Hazlo tú, no me des pasos.
+- Busca todas las fotos de la carpeta de mi página: [carpeta del proyecto]
+- Trabaja en una copia. No toques las originales.
+- Conviértelas al formato más liviano que se vea igual, y achica las que sean más grandes de lo que se muestran.
+- No cambies las fotos que ya están livianas ni las imágenes que se usan al compartir el enlace en redes.
+- Muéstrame una tabla: foto, peso antes, peso después.
+- Dime el total antes y después.
+
+Cuando yo diga que sí, reemplaza las originales y actualiza la página. No publiques nada sin mi sí.</pre>
+      <button class="copy" data-target="p-fotos">Copiar prompt</button>
+    </article>
+    <article class="card" id="resenas">
+      <p class="word">RESEÑAS</p>
+      <h3>No sé qué piden mis clientes</h3>
+      <p class="mode">🖥️ En el computador, la IA lo hace sola</p>
+      <p class="what">Lee las reseñas de Google de un negocio y te resume qué valoran y de qué se quejan.</p>
+      <p class="result"><b>Mi prueba:</b> Leyó 150 reseñas de un café. Lo que más repetían los clientes era &quot;trabajar&quot;.</p>
+      <pre id="p-resenas">Lee las reseñas de Google de este negocio y dime qué piden los clientes: [nombre del negocio y ciudad]
+
+Hazlo tú, no me des pasos. Lee al menos 100 reseñas, incluidas las malas.
+Entrégame:
+- Cuántas leíste y cuántas son de 4 y 5 estrellas.
+- Las 5 cosas que más repiten los clientes contentos, con cuántas veces aparece cada una.
+- Las 3 quejas que más se repiten, con cuántas veces aparece cada una.
+- Qué debería decir la página web del negocio en la primera pantalla, según lo que la gente valora.
+- Una respuesta corta y amable para cada tipo de queja.
+
+No inventes reseñas ni números. Si no pudiste leer suficientes, dilo.</pre>
+      <button class="copy" data-target="p-resenas">Copiar prompt</button>
+    </article>
+    <article class="card" id="numeros">
+      <p class="word">NUMEROS</p>
+      <h3>No sé qué video repetir</h3>
+      <p class="mode">🖥️ En el computador, la IA lo hace sola</p>
+      <p class="what">Entra a las estadísticas de tus redes y te dice qué funciona y qué no.</p>
+      <p class="result"><b>Mi prueba:</b> Mi video más visto no era de páginas web: era el de mi historia.</p>
+      <pre id="p-numeros">Entra a las estadísticas de mis redes y dime qué está funcionando: [Instagram / YouTube / TikTok]
+
+Hazlo tú, no me des pasos. Solo lee: no publiques, no respondas ni cambies nada.
+- Revisa mis últimos 20 videos en cada red: vistas, tiempo visto, comentarios y veces compartido.
+- Dime cuáles 3 funcionaron mejor y qué tienen en común (tema, duración, cómo empiezan).
+- Dime cuáles 3 funcionaron peor y qué tienen en común.
+- Dime qué duración se ve más completa.
+- Dame 5 ideas de video nuevas, basadas solo en lo que ya funcionó.
+
+No inventes números: si una red no te deja ver un dato, dilo.</pre>
+      <button class="copy" data-target="p-numeros">Copiar prompt</button>
+    </article>
+    <article class="card" id="dedo">
+      <p class="word">DEDO</p>
+      <h3>Los botones de mi web son muy pequeños</h3>
+      <p class="mode">🖥️ En el computador, la IA lo hace sola</p>
+      <p class="what">Abre tu página en tamaño de celular y mide cada botón, como un cliente que usa el dedo.</p>
+      <p class="result"><b>Mi prueba:</b> 10 de los 40 botones de mi web eran muy pequeños. Uno era &quot;Cotizar&quot;.</p>
+      <pre id="p-dedo">Abre esta página en tamaño de celular y revísala como un cliente que usa el dedo: [tu página web]
+
+Hazlo tú, no me des pasos.
+- Mide cada botón y cada enlace. Dime cuáles miden menos de 44 px de alto o de ancho.
+- Dime si algo se sale de la pantalla hacia los lados.
+- Dime si el botón para escribirme o comprar se ve sin bajar.
+- Dime qué textos tienen letra de menos de 12 px.
+- Cuenta cuántas pantallas hay que bajar hasta el final.
+
+Entrégame la lista ordenada: primero lo que hace que un cliente no pueda tocar o leer.
+Si tienes el código de la página, prepara el arreglo y muéstramelo. No lo publiques sin mi sí.</pre>
+      <button class="copy" data-target="p-dedo">Copiar prompt</button>
+    </article>
+    <article class="card" id="google">
+      <p class="word">GOOGLE</p>
+      <h3>¿Cómo sale mi negocio en Google?</h3>
+      <p class="mode">🖥️ En el computador, la IA lo hace sola</p>
+      <p class="what">Revisa el título y la descripción de cada página y reescribe los que se cortan.</p>
+      <p class="result"><b>Mi prueba:</b> Mis 9 páginas pasaron. El título de otra agencia tenía 157 letras; Google muestra unas 60.</p>
+      <pre id="p-google">Revisa cómo aparece cada página de mi sitio en Google: [tu página web]
+
+Hazlo tú, no me des pasos. Encuentra todas las páginas del sitio y, de cada una, dime:
+- El título y cuántas letras tiene. Si pasa de 60, Google lo corta.
+- La descripción y cuántas letras tiene. Si pasa de 160, se corta; si tiene menos de 110, se queda corta.
+- Si dice qué vendo y dónde.
+- Si dos páginas tienen el mismo título o la misma descripción.
+
+Reescribe las que estén mal: el título empezando por lo que busca la gente, y la descripción con el beneficio y una invitación a escribir.
+Muéstrame el antes y el después de cada una. No cambies nada en la página sin mi sí.</pre>
+      <button class="copy" data-target="p-google">Copiar prompt</button>
+    </article>
+    <article class="card" id="invisible">
+      <p class="word">INVISIBLE</p>
+      <h3>¿Google puede leer mi página?</h3>
+      <p class="mode">🖥️ En el computador, la IA lo hace sola</p>
+      <p class="what">Entra a tu web como entra Google y te dice qué páginas le llegan vacías.</p>
+      <p class="result"><b>Mi prueba:</b> A Google le llegan completas mis 9 páginas, con casi mil palabras en la principal.</p>
+      <pre id="p-invisible">Entra a mi página web como entra Google y dime si puede leerla: [tu página web]
+
+Hazlo tú, no me des pasos.
+- Revisa si existe el archivo de permisos (robots.txt) y si bloquea algo.
+- Revisa si existe el mapa del sitio (sitemap.xml) y si todas sus páginas cargan.
+- Abre cada página sin ejecutar programas, como un robot, y dime cuántas palabras de texto le llegan.
+- Dime si alguna página está marcada para no aparecer en Google.
+- Dime si alguna página aparece con dos direcciones distintas.
+
+Entrégame una lista: qué páginas ve Google completas, cuáles ve vacías y cuáles no ve.
+Explícame cada problema en una frase y qué decirle a quien me hizo la página.</pre>
+      <button class="copy" data-target="p-invisible">Copiar prompt</button>
+    </article>
+    <article class="card" id="duplicados">
+      <p class="word">DUPLICADOS</p>
+      <h3>Tengo archivos repetidos</h3>
+      <p class="mode">🖥️ En el computador, la IA lo hace sola</p>
+      <p class="what">Encuentra los archivos repetidos de tu computador, comparándolos por su contenido.</p>
+      <p class="result"><b>Mi prueba:</b> Revisó más de mil archivos en 3 segundos y encontró 63 grupos repetidos: 750 megas.</p>
+      <pre id="p-duplicados">Encuentra los archivos repetidos de mi computador.
+
+Hazlo tú, no me des pasos.
+- Revisa Documentos, Escritorio, Descargas, Imágenes y Videos.
+- Compara los archivos por su contenido, no por el nombre.
+- Ignora las carpetas de programas y de sistema.
+- Muéstrame los grupos de repetidos, del que más espacio ocupa al que menos, con la ubicación de cada copia.
+- Dime cuánto espacio recupero en total.
+- Marca cuál copia conviene dejar: la que está en la carpeta más ordenada.
+
+No borres nada. Cuando yo elija, manda las copias a la Papelera, no las borres para siempre.</pre>
+      <button class="copy" data-target="p-duplicados">Copiar prompt</button>
+    </article>
 
   <h2>Para tu casa</h2>
     <article class="card" id="espacio">
